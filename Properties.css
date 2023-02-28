@@ -1,0 +1,306 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.collapsible {
+    background-color: #107953;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    }
+.active, .collapsible:hover {
+    background-color: lightgreen;
+    }
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: white;
+    }
+.grid-container_1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    background-color: black;
+    grid-gap: 10px;
+    padding: 5px;
+    height: 100vh;
+}
+.grid-item_1 {
+    padding: 10px;
+    margin: 5px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    border-radius: 5%;
+}
+#item1_1{
+    background-color: #0f2307;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#item2_1 {
+    background-color: #2d6916;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#item3_1 {
+    background-color: #4bb025;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#item4_1 {
+    background-color: #75da4f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#item5_1 {
+    background-color: #ace996;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#item6_1 {
+    background-color: #e3f8dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container_2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: black;
+    grid-gap: 10px;
+    padding: 5px;
+    height: 100vh;
+}
+
+.grid-item_2 {
+    padding: 10px;
+    margin: 5px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    border-radius: 5%;
+}
+
+#item1_2 {
+    background-color: #2f042c;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#item2_2 {
+    background-color: #8e0b84;
+    grid-column: 1/2;
+    grid-row: 2/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#item3_2 {
+    background-color: #ed12dc;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#item4_2 {
+    background-color: #f471ea;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#item5_2 {
+    background-color: #fbd0f8;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container_3 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: black;
+    grid-gap: 10px;
+    padding: 5px;
+    height: 100vh;
+    border: 1px solid white;
+    background-image: url("https://img.freepik.com/free-vector/vector-ripe-yellow-banana-bunch-isolated-white-background_1284-45456.jpg?w=2000");
+}
+
+.grid-item_3 {
+    padding: 10px;
+    margin: 5px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    border-radius: 5%;
+}
+
+#item1_3 {
+    background-color: #02312a;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#item2_3 {
+    background-color: #06937e;
+    grid-column: 4/7;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+}
+#item3_3 {
+    background-color: #06937e;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#item4_3 {
+    background-color: #6cf9e4;
+    grid-column: 3/7;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#item5_3 {
+    background-color: #cefdf6;
+    grid-column: 1/7;
+    grid-row: 3/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.grid-container_4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: black;
+    grid-gap: 10px;
+    padding: 5px;
+    height: 100vh;
+    border-left: 2px solid magenta;
+    border-right: 2px solid pink;
+    border-top : 2px solid red;
+    border-bottom: 2px solid orange;
+}
+
+.grid-item_4 {
+    padding: 10px;
+    margin: 5px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    border-radius: 5%;
+}
+
+#item1_4 {
+    background-color: #200508;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#item2_4 {
+    background-color: #5f0e19;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#item3_4 {
+    background-color: #9f172a;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#item4_4 {
+    background-color: #de213b;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-container_4_1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: #de213b;
+    grid-gap: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.grid-item_4_1 {
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 5%;
+}
+
+#item5_4 {
+    background-color: #e86073;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#item6_4 {
+    background-color: #f1a0ab;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 20px;
+}
+#item7_4 {
+    background-color: #fadfe3;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
