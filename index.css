@@ -1,0 +1,123 @@
+
+
+.general-grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    /*grid-template-rows: repeat(15, 6.666%);*/
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.page-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #25404a;
+    color: white;
+    /*grid-row: 1/2;*/
+}
+.left-item-page-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.right-item-page-header{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#header-buttons{
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.page-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+    background-color: #b97d2d;
+    color: white;
+    /*grid-row: 3/6;*/
+}
+
+.news-letter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #25404a;
+    color: white;
+    /*grid-row: 7/8;*/
+}
+.content-newsletter{
+    display: flex;
+    flex-direction: row;
+    padding: 5% 10% 5% 10%;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.right-item-newsletter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.mail-button{
+    background-color: #b97d2d;
+    color: white;
+    border: none;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 1px 1px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.mail-button:hover{
+    background-color: #b85d2d;
+    color: white;
+}
+#email-newsletter{
+    place-content: center;
+}
+
+.content-courses{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-in-between;
+    align-items: center;
+    /*grid-row: 9/13;*/
+}
+.course{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5%;
+    background-color: white;
+    color: black;
+}
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #25404a;
+    color: white;
+    /*grid-row: 14/15;*/
+}
+* {
+    box-sizing: border-box;
+}
